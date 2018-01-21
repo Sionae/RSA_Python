@@ -8,17 +8,18 @@ def CreateKey(p, q):
     phi = (p-1)*(q-1)
 
     PGCD = 0
-    e=0
+    e=max(p, q)
     c=0
 
     while PGCD != 1:
 
         while True:
-
-            if p < e and q < e and e < phi:
-                e += 1
-                break
+            
             e+=1
+            
+            if p < e and q < e and e < phi:
+                break
+            
 
             if e > phi:
                 disp('These two prime numbers do not work well with each other (calculation becomes too long).')
