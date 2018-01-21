@@ -14,7 +14,7 @@ def Decode(EncodedBlock, priv):
     Mots = []
 
 
-    for i in trange(0, len(EncodedBlock)):
+    for i in range(0, len(EncodedBlock)):
 
         #We use (encoded letter ^ d)%n to find the initial ascii
         #We then convert the ascii into the initial character
