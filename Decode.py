@@ -1,6 +1,5 @@
 # encoding: utf-8
 
-from tqdm import trange
 from Encode import *
 from CreateKey import *
 import sys
